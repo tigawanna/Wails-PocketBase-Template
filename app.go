@@ -44,7 +44,7 @@ func (a *App) GetTodoList() []ListItem {
 	PBApp.DB().
 		Select("id", "data", "state", "updated").
 		From("todo_list").
-		OrderBy("updated DESC").
+		OrderBy("state ASC", "updated DESC").
 		All(&records)
 	log.Println("Todo List fetched successfully")
 	return records
