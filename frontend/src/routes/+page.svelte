@@ -1,6 +1,5 @@
 <script>
 	import { GetTodoList, AddTodo, DeleteTodo, UpdateTodo } from '$lib/wailsjs/go/main/App';
-	import { onMount } from 'svelte';
 
 	let todoList = $state([]);
 
