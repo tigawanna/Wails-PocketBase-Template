@@ -1,5 +1,5 @@
 <script>
-	import { GetTodoList, AddTodo, DeleteTodo, UpdateTodo } from '$lib/wailsjs/go/main/App';
+	import { GetTodoList, AddTodo, DeleteTodo, UpdateTodo } from '$lib/wailsjs/go/main/WailsApp.js';
 
 	let todoList = $state([]);
 
